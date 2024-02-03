@@ -112,6 +112,10 @@ img {
   height: auto;
 }
 
+.logo-icon {
+  width: 200px;
+}
+
 /*========== THEME ==========*/
 .change-theme {
   font-size: 1.25rem;
