@@ -764,6 +764,28 @@ body.light-theme {
   background-color: var(--first-color);
 }
 
+/*=============== OPEN TESTIMONIAL ===============*/
+.testimonial-carousel .carousel-item {
+  text-align: center;
+  color: #fff;
+}
+.testimonial-carousel .carousel-item img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+}
+.testimonial-carousel .carousel-item h5 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.testimonial-carousel .carousel-item p {
+  font-size: 16px;
+  color: #777;
+}
+/*=============== CLOSE TESTIMONIAL ===============*/
+
+
 /*=============== CONTACT ===============*/
 .contact__container {
   row-gap: 3rem;
