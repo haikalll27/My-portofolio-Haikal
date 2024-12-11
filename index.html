@@ -19,6 +19,7 @@
 
     <!--======= CSS =======-->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/filters-project.css" />
 
     <title>My Portofolio Haikal</title>
   </head>
@@ -105,7 +106,7 @@
                         </div>
 
                         <div class="home__handle">
-                            <!-- <img src="./assets/img/perfil.png" alt="" class="home__img"> -->
+                            <img src="./assets/img/img-profile.png" alt="" class="home__img">
                         </div>
 
                         <div>
@@ -390,166 +391,235 @@
       <section class="work section" id="work">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-12 mb-5">
-                    <div class="text-center mb-4">
-                        <span class="section__subtitle mb-2">My Recent Works</span>
-                        <h2 class="section__title">Projects</h2>
-                    </div>
+                <div class="col-md-12">
+                  <div class="text-center">
+                    <span class="section__subtitle mb-2">My Recent Works</span>
+                    <h2 class="section__title">Projects</h2>
+                  </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="work__card mix web">
-                      <img src="./assets/img/portofolio-hd.png" alt="" class="work__img" />
-                        <div class="grup-text-portofolio">
-                          <h3 class="work__title-1 mb-3">Fullstack Web Developer</h3>
-                          <h3 class="work__title-2 mb-2">Homedevs</h3>
-                          <h3 class="work__title-3 mb-2">Frelancer</h3>
-                        </div>
-                        <div class="text-center d-flex justify-content-center">
-                          <a href="https://homedevs.id/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                        </div>
-                    </div>
+                <div class="col-md-12">
+                  <div class="product-filters text-center mb-5">
+                    <ul>
+                        <li class="active tab-link" data-tab="all">All</li>
+                        <li class="tab-link" data-tab="tab-1">Full Stack Developer</li>
+                        <li class="tab-link" data-tab="tab-2">Front End Developer</li>
+                        <li class="tab-link" data-tab="tab-3">Back End Developer</li>
+                    </ul>
                 </div>
-        
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="work__card mix movil">
-                      <img src="./assets/img/portofolio-fan.png" alt="" class="work__img" />
-                        <div class="grup-text-portofolio">
-                            <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
-                            <h3 class="work__title-2 mb-2">Faust Aegis Network</h3>
-                            <h3 class="work__title-3 mb-2">Frelancer</h3>
-                        </div>
-                        <div class="text-center d-flex justify-content-center">
-                            <a href="https://homedevs.id/fan" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                        </div>
-                    </div>
                 </div>
-        
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="work__card mix design">
-                      <img src="./assets/img/portofolio-gri-beef.png" alt="" class="work__img" />
-                        <div class="grup-text-portofolio">
-                            <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
-                            <h3 class="work__title-2 mb-2">Giri Beef Nusantara</h3>
-                            <h3 class="work__title-3 mb-2">Frelancer</h3>
+                
+                <div class="row justify-content-center tabs-content-wrapper">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix full-stack-developer">
+                      <div id="tab-1" class="tab-content">
+                        <div class="work__card mix full-stack-developer">
+                          <img src="./assets/img/portofolio-hd.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                              <h3 class="work__title-1 mb-3">Fullstack Web Developer</h3>
+                              <h3 class="work__title-2 mb-2">Homedevs</h3>
+                              <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                              <a href="https://homedevs.id/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
                         </div>
-                        <div class="text-center d-flex justify-content-center">
-                            <a href="https://giribeefnusantara.id/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="work__card mix web">
-                      <img src="./assets/img/portofolio-labella.png" alt="" class="work__img" />
-                        <div class="grup-text-portofolio">
-                            <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
-                            <h3 class="work__title-2 mb-2">Labella Online Strore</h3>
-                            <h3 class="work__title-3 mb-2">Frelancer</h3>
-                        </div>
-                        <div class="text-center d-flex justify-content-center">
-                            <a href="https://www.labellaonlinestore.com/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="work__card mix movil">
-                      <img src="./assets/img/portofolio-ptksn.png" alt="" class="work__img" />
-                        <div class="grup-text-portofolio">
-                            <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
-                            <h3 class="work__title-2 mb-2">PT KSN</h3>
-                            <h3 class="work__title-3 mb-2">Frelancer</h3>
-                        </div>
-                        <div class="text-center d-flex justify-content-center">
-                            <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="work__card mix movil">
-                      <img src="./assets/img/portofolio-sneakers.png" alt="" class="work__img" />
-                        <div class="grup-text-portofolio">
-                            <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
-                            <h3 class="work__title-2 mb-2">Naira Sneakers</h3>
-                            <h3 class="work__title-3 mb-2">Frelancer</h3>
-                        </div>
-                        <div class="text-center d-flex justify-content-center">
-                            <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="work__card mix movil">
-                      <img src="./assets/img/portofolio-njy.png" alt="" class="work__img" />
-                        <div class="grup-text-portofolio">
-                            <h3 class="work__title-1 mb-3">Fullstack Web Developer</h3>
-                            <h3 class="work__title-2 mb-2">Nata Jaya Electro</h3>
-                            <h3 class="work__title-3 mb-2">Frelancer</h3>
-                        </div>
-                        <div class="text-center d-flex justify-content-center">
-                            <a href="https://www.natajayaelektro.com/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="work__card mix movil">
-                      <img src="./assets/img/portofolio-silancar.png" alt="" class="work__img" />
-                        <div class="grup-text-portofolio">
-                            <h3 class="work__title-1 mb-3">Backtend Web Developer</h3>
-                            <h3 class="work__title-2 mb-2">Silancar Nakertranskonut</h3>
-                            <h3 class="work__title-3 mb-2">Frelancer</h3>
-                        </div>
-                        <div class="text-center d-flex justify-content-center">
-                            <a href="https://silancar-nakertranskonut.id/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                  <div class="work__card mix movil">
-                    <img src="./assets/img/portofolio-icas.png" alt="" class="work__img" />
-                      <div class="grup-text-portofolio">
-                          <h3 class="work__title-1 mb-3">Backtend Web Developer</h3>
-                          <h3 class="work__title-2 mb-2">INTERNATIONAL CONFERENCE ON <br> APPLIED SCIENCE 2024</h3>
-                          <h3 class="work__title-3 mb-2">Frelancer</h3>
                       </div>
-                      <div class="text-center d-flex justify-content-center">
-                          <a href="https://icas.exenesia.com/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="work__card mix movil">
-                  <img src="./assets/img/portofolio-bakul.png" alt="" class="work__img" />
-                    <div class="grup-text-portofolio">
-                        <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
-                        <h3 class="work__title-2 mb-2">Beasiswa Kuliah (Bakul)</h3>
-                        <h3 class="work__title-3 mb-2">Frelancer</h3>
                     </div>
-                    <div class="text-center d-flex justify-content-center">
-                        <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+            
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix front-end-developer">
+                      <div id="tab-2" class="tab-content">
+                        <div class="work__card mix front-end-developer">
+                          <img src="./assets/img/portofolio-fan.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Faust Aegis Network</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="https://homedevs.id/fan" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix front-end-developer">
+                      <div id="tab-2" class="tab-content">
+                        <div class="work__card mix front-end-developer">
+                          <img src="./assets/img/portofolio-gri-beef.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Giri Beef Nusantara</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="https://giribeefnusantara.id/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix front-end-developer">
+                      <div id="tab-2" class="tab-content">
+                        <div class="work__card mix front-end-developer">
+                          <img src="./assets/img/portofolio-labella.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Labella Online Strore</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="https://www.labellaonlinestore.com/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix back-end-developer">
+                      <div id="tab-3" class="tab-content">
+                        <div class="work__card mix back-end-developer">
+                          <img src="./assets/img/portofolio-icas.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Backtend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">INTERNATIONAL CONFERENCE ON <br> APPLIED SCIENCE 2024</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="https://icassvipb.com" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix front-end-developer">
+                      <div id="tab-2" class="tab-content">
+                        <div class="work__card mix front-end-developer">
+                          <img src="./assets/img/portofolio-ptksn.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">PT KSN</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix front-end-developer">
+                      <div id="tab-2" class="tab-content">
+                        <div class="work__card mix front-end-developer">
+                          <img src="./assets/img/portofolio-sneakers.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Naira Sneakers</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix full-stack-developer">
+                      <div id="tab-1" class="tab-content">
+                        <div class="work__card mix full-stack-developer">
+                          <img src="./assets/img/portofolio-njy.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Fullstack Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Nata Jaya Electro</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="https://www.natajayaelektro.com/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix back-end-developer">
+                      <div id="tab-3" class="tab-content">
+                        <div class="work__card mix back-end-developer">
+                          <img src="./assets/img/portofolio-silancar.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Backtend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Silancar Nakertranskonut</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="https://silancar-nakertranskonut.id/" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix front-end-developer">
+                      <div id="tab-2" class="tab-content">
+                        <div class="work__card front-end-developer">
+                          <img src="./assets/img/portofolio-bakul.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Frontend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Beasiswa Kuliah (Bakul)</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix full-stack-developer">
+                      <div id="tab-1" class="tab-content">
+                        <div class="work__card mix full-stack-developer">
+                          <img src="./assets/img/portofolio-destinasi.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Fullstack Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Wisata Alam</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix full-stack-developer">
+                      <div id="tab-1" class="tab-content">
+                        <div class="work__card mix full-stack-developer">
+                          <img src="./assets/img/portofolio-bpskljawa.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Fullstack Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">BPSKL Jawa</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="https://bpskljawa.codepower.site" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mix back-end-developer">
+                      <div id="tab-3" class="tab-content">
+                        <div class="work__card mix back-end-developer">
+                          <img src="./assets/img/portofolio-dipinus.png" alt="" class="work__img" />
+                            <div class="grup-text-portofolio">
+                                <h3 class="work__title-1 mb-3">Backtend Web Developer</h3>
+                                <h3 class="work__title-2 mb-2">Dipinus</h3>
+                                <h3 class="work__title-3 mb-2">Frelancer</h3>
+                            </div>
+                            <div class="text-center d-flex justify-content-center">
+                                <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
+                            </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div class="work__card mix movil">
-                <img src="./assets/img/portofolio-destinasi.png" alt="" class="work__img" />
-                  <div class="grup-text-portofolio">
-                      <h3 class="work__title-1 mb-3">Fullstack Web Developer</h3>
-                      <h3 class="work__title-2 mb-2">Wisata Alam</h3>
-                      <h3 class="work__title-3 mb-2">Frelancer</h3>
-                  </div>
-                  <div class="text-center d-flex justify-content-center">
-                      <a href="#" class="btn btn-work__button"> Demo <i class="bx bx-right-arrow-alt work__icon-1"></i> </a>
-                  </div>
-              </div>
+
           </div>
-            </div>
-        </div>
+      </div>
       </section>
 
 
@@ -1550,6 +1620,13 @@
 
     <!--======= LINK ONLINE BOOTSTRAP =======-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- MixItUp Library -->
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
@@ -1564,5 +1641,39 @@
 
     <!--======= MAIN JS =======-->
     <script src="./assets/js/main.js"></script>
+    <!-- <script src="./assets/js/filters-project.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const tabLinks = document.querySelectorAll(".product-filters ul li");
+          const tabContents = document.querySelectorAll(".tab-content");
+
+          tabLinks.forEach((link) => {
+              link.addEventListener("click", function () {
+                  const tab = this.getAttribute("data-tab");
+
+                  // Remove active class from all filter links
+                  tabLinks.forEach((link) => link.classList.remove("active"));
+                  this.classList.add("active");
+
+                  // Show/Hide tab contents based on tab
+                  tabContents.forEach((content) => {
+                      if (tab === "all") {
+                          content.classList.add("show");
+                      } else {
+                          content.id === tab
+                              ? content.classList.add("show")
+                              : content.classList.remove("show");
+                      }
+                  });
+              });
+          });
+
+          // Show all tab contents by default
+          const allTab = document.querySelector('.tab-link[data-tab="all"]');
+          allTab.click(); // Trigger click event to show all content
+      });
+  </script>
+  
+  
   </body>
 </html>

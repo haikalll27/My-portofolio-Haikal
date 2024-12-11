@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--======= FAVICON =======-->
+    <link rel="shortcut icon" href="./assets/img/logo-h.png" class="logo-icon" />
+
+    <!--======= BOXICONS =======-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!--======= CSS =======-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tabs-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .product-filters {
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .product-filters ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product-filters ul li {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 10px;
+            border: 2px solid #2c2c6c;
+            color: #323232;
+            cursor: pointer;
+            padding: 8px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .product-filters ul li.active {
+            border: 2px solid #4db5ff;
+            background-color: #2c2c6c;
+            color: #fff;
+        }
+
+        .tabs-content-wrapper {
+            position: relative;
+            padding: 20px;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .tab-content {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            visibility: hidden;
+        }
+
+        .tab-content.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @media only screen and (max-width: 575.96px) {
+            .product-filters ul {
+                flex-direction: column;
+            }
+
+            .product-filters ul li {
+                display: block;
+                font-weight: 700;
+                font-size: 18px;
+                margin: 10px 0;
+                border: 2px solid #051922;
+                color: #323232;
+                cursor: pointer;
+                padding: 8px 20px;
+                border-radius: 25px;
+            }
+        }
+    </style>
+
+    <title>My Portfolio Haikal - Tabs Navigation</title>
+</head>
+<body>
+    <!-- Tabs Navigation -->
+    <div class="tabs-container">
+        <div class="product-filters">
+            <ul>
+                <li class="active tab-link" data-tab="all">All</li>
+                <li class="tab-link" data-tab="tab-1">Full Stack Developer</li>
+                <li class="tab-link" data-tab="tab-2">Front End Developer</li>
+                <li class="tab-link" data-tab="tab-3">Back End Developer</li>
+            </ul>
+        </div>
+        <div class="tabs-content-wrapper">
+            <div id="tab-1" class="tab-content">
+                <div class="work__card mix full-stack-developer">
+                    <img src="./assets/img/portofolio-hd.png" alt="" class="work__img" />
+                    <div class="grup-text-portofolio">
+                        <h3 class="work__title-1 mb-3">Fullstack Web Developer</h3>
+                        <h3 class="work__title-2 mb-2">Homedevs</h3>
+                        <h3 class="work__title-3 mb-2">Freelancer</h3>
+                    </div>
+                    <div class="text-center d-flex justify-content-center">
+                        <a href="https://homedevs.id/" class="btn btn-work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-2" class="tab-content">
+                <div class="work__card mix front-end-developer">
+                    <img src="./assets/img/portofolio-bakul.png" alt="" class="work__img" />
+                    <div class="grup-text-portofolio">
+                        <h3 class="work__title-1 mb-3">Front End Web Developer</h3>
+                        <h3 class="work__title-2 mb-2">Homedevs</h3>
+                        <h3 class="work__title-3 mb-2">Freelancer</h3>
+                    </div>
+                    <div class="text-center d-flex justify-content-center">
+                        <a href="https://homedevs.id/" class="btn btn-work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-3" class="tab-content">
+                <div class="work__card mix back-end-developer">
+                    <img src="./assets/img/portofolio-dipinus.png" alt="" class="work__img" />
+                    <div class="grup-text-portofolio">
+                        <h3 class="work__title-1 mb-3">Back End Web Developer</h3>
+                        <h3 class="work__title-2 mb-2">Homedevs</h3>
+                        <h3 class="work__title-3 mb-2">Freelancer</h3>
+                    </div>
+                    <div class="text-center d-flex justify-content-center">
+                        <a href="https://homedevs.id/" class="btn btn-work__button">
+                            Demo <i class="bx bx-right-arrow-alt work__icon-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--======= JS =======-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabLinks = document.querySelectorAll(".product-filters ul li");
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            tabLinks.forEach((link) => {
+                link.addEventListener("click", function () {
+                    const tab = this.getAttribute("data-tab");
+
+                    // Remove active class from all filter links
+                    tabLinks.forEach((link) => link.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Show/Hide tab contents based on tab
+                    tabContents.forEach((content) => {
+                        if (tab === "all") {
+                            content.classList.add("show");
+                        } else {
+                            content.id === tab
+                                ? content.classList.add("show")
+                                : content.classList.remove("show");
+                        }
+                    });
+                });
+            });
+
+            // Show all tab contents by default
+            const allTab = document.querySelector('.tab-link[data-tab="all"]');
+            allTab.click(); // Trigger click event to show all content
+        });
+    </script>
+</body>
+</html>

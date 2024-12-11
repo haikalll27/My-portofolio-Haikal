@@ -329,13 +329,13 @@ body.light-theme {
 }
 
 .home__img {
-  width: 160px;
+  width: 500px;
 }
 
 .home__handle {
   justify-self: center;
-  width: 20%;
-  height: 400px;
+  width: 19%;
+  height: 330px;
   background: linear-gradient(180deg, hsla(var(--first-hue), var(--sat), var(--lig), 1), hsla(var(--first-hue), var(--sat), var(--lig), 0.2));
   border-radius: 10rem 10rem 1rem 1rem;
   display: flex;
